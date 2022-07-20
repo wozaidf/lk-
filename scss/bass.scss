@@ -1,0 +1,22 @@
+$mycolor:red;
+$mywidth:200px;
+$myfontfamily:'Courier New', Courier, monospace;
+$mybackgroundcolor:blue;
+div{
+  
+  color: $mycolor;
+  $mywidth:200px;
+  width: $mywidth;
+ 
+}
+body{
+  width: $mywidth;
+
+}
+h1{
+  font-family: $myfontfamily;
+}
+.helloword{
+  background-color: $mybackgroundcolor;
+  width: $mywidth;
+}

@@ -1,0 +1,29 @@
+body {
+    background-color: floralwhite;
+    text-align: center
+    ;border: 10px;
+    border-bottom: 25px;
+}
+
+a {
+    color: rgb(80, 183, 80)
+}
+
+button {
+    color: rgb(235, 235, 243);
+}
+#ad{border: 1px solid #14161b;padding: 10px 40px;
+    width:200px;
+    border-radius:25px;
+background-color: rgb(22, 116, 17);}
+#ad1{border: 2px solid #14161b;
+    width:200px;
+    border-bottom:25px;
+    margin: 10px;
+}
+#ad2{border: 2px solid #14161b;
+    width:200px;
+    border-bottom:25px;
+    margin: 10px;
+}
+#ad3{font-size: 5px;}

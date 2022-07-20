@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let result = []
+// 闭包 + 宏任务
+function test() {
+    //变量提升、函数作用域 i = undefined; i = 10
+    for(let i = 0; i < 10; i++) {
+        
+        setTimeout(() => console.log(i))
+        // result[i] = function() {
+        //     return i
+        // }
+        // result[i] = (function(param) {return param})(i)
+        // console.log(i)
+    }
+    
+}
+test()
+
+    </script>
+</body>
+</html>
