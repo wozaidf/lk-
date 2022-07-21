@@ -9,7 +9,7 @@ setTimeout(function () {  //第一层
     }, 2000)
 }, 3000)
 
-//例二          异步任务，回调函数  回调地狱
+//例2          异步任务，回调函数  回调地狱
 function getTea(fn) {
     setTimeout(() => {
         fn('奶茶')
@@ -32,3 +32,39 @@ getHotTop(function fn(data) {
 })
 
 console.log('不要等待直接')               //同步任务
+
+
+//例3
+function fn1(n, callback) {
+    setTimeout(() => {
+        callback(n + 1)
+    }, 1000)
+}
+
+function fn2(n, callback) {
+    setTimeout(() => {
+        callback(n + 2)
+    }, 1000)
+}
+
+function fn3(n, callback) {
+    setTimeout(() => {
+        callback(n + 3)
+    }, 1000)
+}
+
+function fn4(n, callback) {
+    setTimeout(() => {
+        callback(n + 4)
+    }, 1000)
+}
+
+fn1(10, n => {
+    fn2(n, n => {
+        fn3(n, n => {
+            fn4(n, n => {
+                console.log(n)
+            })
+        })
+    })
+})
