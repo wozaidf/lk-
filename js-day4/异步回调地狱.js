@@ -34,7 +34,7 @@ getHotTop(function fn(data) {
 console.log('不要等待直接')               //同步任务
 
 
-//例3
+//例3      回调嵌套
 function fn1(n, callback) {
     setTimeout(() => {
         callback(n + 1)
