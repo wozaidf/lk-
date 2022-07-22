@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- 引入jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="id">123112</div>
+    <script>
+        //操作真实DOM，会时时反应到浏览器上。操作虚拟的DOM：先建一个和真实DOM相近的虚拟DOM，先用js对虚拟DOM对象进行多次修改，再返回真实DOM
+        document.getElementById('id').innerHTML = '321213'
+        document.getElementById('id').innerHTML = '9'
+        $('#id')[0].innerHTML = 'iqury'
+    </script>
+</body>
+
+</html>
